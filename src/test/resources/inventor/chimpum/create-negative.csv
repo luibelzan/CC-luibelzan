@@ -1,0 +1,7 @@
+recordIndex,code,title,description,startDate,finishDate,budget,link
+0,ABC-123,Titulo prueba,Descripcion prueba,2022/08/10 20:20,2022/10/10 20:20,EUR 50.00,
+1,123-168,,Descripcion prueba,2022/08/10 20:20,2022/10/10 20:20,EUR 100.00,
+2,124-168,Titulo prueba,,2022/08/10 20:20,2022/10/10 20:20,EUR 100.00,
+3,125-168,Titulo prueba,Descripcion prueba,2021/08/10 20:20,2022/10/10 20:20,EUR 10.00,
+4,126-168,Titulo prueba,Descripcion prueba,2022/08/10 20:20,2022/05/10 20:20,EUR 35.50,
+5,127-168,Titulo prueba,Descripcion prueba,2022/08/10 20:20,2022/10/10 20:20,EUR -10.00,

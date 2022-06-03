@@ -1,0 +1,6 @@
+key,version,code,creationMoment,title,description,startDate,finishDate,budget,link,key:artefact
+chimpum-01,0,123-456,2022/05/02 15:22,Titulo del primer chimpum,Descripción del primer chimpum,2022/07/04 15:22,2022/10/06 17:10,EUR 50.00,,item-02
+chimpum-02,0,123-457,2022/05/02 17:00,Titulo del segundo chimpum,Descripción del segundo chimpum,2022/07/01 10:22,2022/10/02 08:10,EUR 130.00,,item-01
+chimpum-03,0,123-458,2022/04/010 17:08,Titulo del tercer chimpum,Descripción del tercer chimpum,2022/07/03 15:05,2022/10/06 13:10,USD 20.00,,item-03
+chimpum-04,0,123-459,2022/05/10 20:20,Titulo del cuarto chimpum,Descripción del cuarto chimpum,2022/07/04 15:22,2022/10/09 17:10,USD 100.00,,item-04
+chimpum-05,0,121-111,2022/05/10 20:20,Titulo de la prueba,Descripcion de la prueba,2022/07/10 20:20,2022/11/11 20:20,EUR 50.00,,item-08

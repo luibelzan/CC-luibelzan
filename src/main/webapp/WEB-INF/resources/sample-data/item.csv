@@ -1,0 +1,9 @@
+key,name,code,technology,description,retailPrice,link,status,type,key:inventor
+item-01,GitHub,ABC-123,Scrum,Herramienta de gestión de código,EUR 100.00,https://google.com,PUBLISHED,TOOL,inventor-01
+item-02,MySQL,ABC-124,Server,Bases de datos MySQL,GBP 125.00,https://google.com,PUBLISHED,COMPONENT,inventor-01
+item-03,Dbeaver,ABC-125-D,Software,Cliente de bases de datos,EUR 186.00,https://google.com,NON_PUBLISHED,TOOL,inventor-01
+item-04,Web Server,ABC-123-F,Server,Http server,GBP 122.00,https://google.com,PUBLISHED,COMPONENT,inventor-01
+item-05,Eclipse,ABC-127,Software,IDE para la programación del sistema,USD 980.00,https://google.com,PUBLISHED,TOOL,inventor-01
+item-06,Views,ABC-125-A,Server,Componente de la aplicación web,USD 10.00,https://google.com,PUBLISHED,COMPONENT,inventor-01
+item-07,AVG,AZC-121-A,Seguridad,Antivirus de alta seguridad,USD 50.00,,NON_PUBLISHED,TOOL,inventor-03
+item-08,Binance,ACC-121-B,Criptografía,Mayor exchange por volumen de mercado,USD 20000.00,,NON_PUBLISHED,TOOL,inventor-03

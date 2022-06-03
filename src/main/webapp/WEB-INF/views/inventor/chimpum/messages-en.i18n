@@ -1,0 +1,25 @@
+inventor.item.list.label.code = Code
+inventor.item.list.label.title = Title
+inventor.item.list.label.budget = Budget
+inventor.item.list.label.creationMoment = Creation Moment
+
+inventor.chimpum.form.label.code = Code
+inventor.chimpum.form.label.creationMoment = Creation Moment
+inventor.chimpum.form.label.title = Title
+inventor.chimpum.form.label.description = Description
+inventor.chimpum.form.label.startDate = Start Date
+inventor.chimpum.form.label.finishDate = finishDate
+inventor.chimpum.form.label.durationPeriodInHours = Period In Hours
+inventor.chimpum.form.label.budget = Budget
+inventor.chimpum.form.label.link = Link
+inventor.chimpum.form.button.create = Create
+inventor.chimpum.form.label.delete = Delete
+inventor.chimpum.form.label.update = Update
+
+inventor.message.form.error.date = Start date is after finish date
+inventor.message.form.error.date2 = Finish date is before start date
+inventor.message.form.error.startDate = Start date must be 1 month ahead creation moment
+inventor.message.form.error.finishDate = Duration must be at least one week
+inventor.messages.form.error.budget.ammount = Ammount must be positive
+inventor.messages.form.error.budget.currency = Currency not accepted
+inventor.messages.form.error.duplicate = This item has a chimpum yet
