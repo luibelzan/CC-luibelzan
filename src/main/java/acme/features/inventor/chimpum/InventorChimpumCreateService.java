@@ -76,6 +76,9 @@ public class InventorChimpumCreateService implements AbstractCreateService<Inven
 		budget.setCurrency("EUR");
 		budget.setAmount(0.0);
 		
+		final Calendar calendar = Calendar.getInstance();
+		res.setCreationMoment(calendar.getTime());
+		
 		res.setCode("");
 		res.setTitle("");
 		res.setDescription("");
@@ -100,23 +103,26 @@ public class InventorChimpumCreateService implements AbstractCreateService<Inven
 			errors.state(request, false, "finishDate", "inventor.message.form.error.date2");
 		}
 		
-		Calendar calendar;
+		if(entity.getStartDate()!=null) {
+			Calendar calendar;
 
-		calendar = Calendar.getInstance();
-		calendar.setTime(entity.getStartDate());
-		calendar.add(Calendar.MONTH, -1);
-		
-		if(calendar.getTime().before(entity.getCreationMoment())) {
-			errors.state(request, false, "startDate", "inventor.message.form.error.startDate");
-		}
-		if(entity.getStartDate()!=null & entity.getFinishDate()!=null) {
-			final long diff = (entity.getFinishDate().getTime()-entity.getStartDate().getTime())/1000/60/60/24;
-
-			if(entity.getStartDate().before(entity.getFinishDate()) && diff<7) {
-				errors.state(request, false, "finishDate", "inventor.message.form.error.finishDate");
-			}
+			calendar = Calendar.getInstance();
+			calendar.setTime(entity.getStartDate());
+			calendar.add(Calendar.MONTH, -1);
 			
+			if(calendar.getTime().before(entity.getCreationMoment())) {
+				errors.state(request, false, "startDate", "inventor.message.form.error.startDate");
+			}
+			if(entity.getStartDate()!=null & entity.getFinishDate()!=null) {
+				final long diff = (entity.getFinishDate().getTime()-entity.getStartDate().getTime())/1000/60/60/24;
+
+				if(entity.getStartDate().before(entity.getFinishDate()) && diff<7) {
+					errors.state(request, false, "finishDate", "inventor.message.form.error.finishDate");
+				}
+				
+			}
 		}
+		
 		
 		final Configuration c = this.adminRepository.findConfiguration();
 		
@@ -133,6 +139,16 @@ public class InventorChimpumCreateService implements AbstractCreateService<Inven
 			if(i.getId()==entity.getArtefact().getId()) {
 				errors.state(request, false, "title", "inventor.messages.form.error.duplicate");
 			}
+		}
+		
+		if(entity.getCreationMoment()!=null) {
+			final Calendar calendar2 = Calendar.getInstance();
+			calendar2.setTime(entity.getCreationMoment());
+			final String day= String.format("%02d" , calendar2.get(Calendar.DAY_OF_MONTH));
+			final String month= String.format("%02d" , calendar2.get(Calendar.MONTH));
+			final String year = String.valueOf(calendar2.get(Calendar.YEAR)).substring(2);
+			
+			
 		}
 		
 		
